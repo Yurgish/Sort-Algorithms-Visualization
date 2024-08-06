@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================ */
+
+@font-face {
+  font-family: "w95";
+  src:
+    url("./assets/fonts/w95fa/W95FA.otf") format("opentype"),
+    url("./assets/fonts/w95fa/w95fa.woff") format("woff"),
+    url("./assets/fonts/w95fa/w95fa.woff2") format("woff2");
+
+}
+
+/* ================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: background-color 0.1s ease-out;
+  /* плавна зміна кольорів*/
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article>*+* {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*Removes arrows in number input*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.w-color-editable-input {
+  --editable-input-color: black !important;
+  --editable-input-label-color: black !important;
+  --editable-input-box-shadow: inset -1px -1px 0 0 #FFFFFF, inset 1px 1px 0 0 #808080, inset -2px -2px 0 0 #C1C1C1, inset 2px 2px 0 0 #000000 !important;
+}
+
+.w-color-editable-input .w-color-interactive {
+  box-shadow: inset -1px -1px 0 0 #FFFFFF, inset 1px 1px 0 0 #808080, inset -2px -2px 0 0 #C1C1C1, inset 2px 2px 0 0 #000000 !important;
+}
+
+.w-color-editable-input input {
+  background: #FFFFFF !important;
+}
+
+.w-color-interactive {
+  box-shadow: inset -1px -1px 0 0 #FFFFFF, inset 1px 1px 0 0 #808080, inset -2px -2px 0 0 #C1C1C1, inset 2px 2px 0 0 #000000 !important;
+}
+
+.input-slider {
+  filter: drop-shadow(inset -1px -1px 0 0 #FFFFFF);
+  clip-path: polygon(100% 0, 100% 57%, 50% 100%, 0 58%, 0 0);
+
+
+}
