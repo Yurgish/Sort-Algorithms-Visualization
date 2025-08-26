@@ -5,6 +5,7 @@ import { useControlContext } from "../../context/controlsContext";
 import DraggableWindow from "../global/DraggableWindow";
 import DropDown from "../inputs/DropDown";
 import ButtonInput from "../inputs/ButtonInput";
+import { useEffect } from "react";
 
 const sorts = [
   { text: "Bubble Sort", value: "bubble" },
@@ -30,6 +31,12 @@ const Controls = () => {
     while (pow2 < value) pow2 *= 2;
     return pow2;
   };
+
+  useEffect(() => {
+    if (state.sortAlgorithm === "bitonic" && state.arraySize !== 256) {
+      setArraySize(256);
+    }
+  }, [state]);
 
   return (
     <DraggableWindow styles={{ top: "1.5rem", left: "1.5rem" }} title={"Controls"}>
