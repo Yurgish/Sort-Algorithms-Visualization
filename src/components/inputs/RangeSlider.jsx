@@ -2,10 +2,11 @@ import { useState } from "react";
 import NumberInput from "./NumberInput";
 import RangeInput from "./RangeInput";
 
-export const RangeSlider = ({ min, max, standartValue, valueText, handleValueChange }) => {
+export const RangeSlider = ({ min, max, standartValue, valueText, handleValueChange, stepFunction }) => {
   const [value, setValue] = useState(standartValue);
 
   const handleChange = (value) => {
+    if (stepFunction) value = stepFunction(value);
     setValue(value);
     handleValueChange(value);
   };

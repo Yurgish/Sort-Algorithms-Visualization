@@ -20,7 +20,9 @@ const DraggableWindow = React.memo(({ children, dragConstraints, styles, portal,
 
   useEffect(() => {
     if (isWindowOpen) {
-      toggleControls.start("initial");
+      toggleControls.start("initial").then(() => {
+        toggleControls.start("visible");
+      });
     } else {
       toggleControls.start("toggle");
     }
@@ -54,10 +56,13 @@ const DraggableWindow = React.memo(({ children, dragConstraints, styles, portal,
           variants={{
             initial: {
               height: "auto",
-              overflow: "hidden",
             },
             toggle: {
               height: 0,
+              overflow: "hidden",
+            },
+            visible: {
+              overflow: "visible",
             },
           }}
           initial="initial"
