@@ -11,17 +11,58 @@
 </p>
 
 <p align="center">
-  This is a frontend web application built with React and JavaScript. The app visualizes sorting algorithms using p5.js to display the sorting process. Framer Motion is used for smooth animations of the application’s control window.
+   Sorting Algorithms Visualizer is an interactive web application that demonstrates how different sorting algorithms work in real time.
 </p>
 
-## Technologies Used:
+## 📌 Overview
 
-- React for building the user interface
-- JavaScript for functionality
-- p5.js for visualizing sorting algorithms
-- Framer Motion for window animations
+The project was created **inspired by sorting visualizer videos on YouTube**, which motivated me to build my own version with a twist — a **retro Windows XP–style interface**.
 
+It combines learning with nostalgia: while you explore algorithms, the interface feels like using a classic XP desktop window.
+
+---
+
+## 🚀 Features
+
+* 🎨 **Windows XP–inspired UI** with draggable control windows
+* 📊 **Visual representation** of multiple sorting algorithms
+* 🎛️ **Interactive controls**:
+
+  * Choose algorithm
+  * Adjust array size
+  * Change visualization delay
+  * Customize background and bar colors
+* ⚡ Built with **React + Vite** for speed and modern DX
+* 🌀 **Smooth animations** powered by Framer Motion for UI
+* 🎥 Real-time rendering with **p5.js** for sorting visualization
+
+---
+
+## 🧮 Implemented Algorithms
+
+  * [Bubble Sort](https://www.geeksforgeeks.org/bubble-sort/)
+  * [Selection Sort](https://www.geeksforgeeks.org/selection-sort/)
+  * [Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/)
+  * [Merge Sort](https://www.geeksforgeeks.org/merge-sort/)
+  * [Heap Sort](https://www.geeksforgeeks.org/heap-sort/)
+  * [Shell Sort](https://www.geeksforgeeks.org/shell-sort/)
+  * [Radix Sort](https://www.geeksforgeeks.org/radix-sort/)
+  * [Quick Sort (Hoare & Lomuto)](https://www.geeksforgeeks.org/dsa/quick-sort-algorithm/)
+  * [Cocktail Sort](https://www.geeksforgeeks.org/dsa/cocktail-sort/)
+  * [Gnome Sort](https://www.geeksforgeeks.org/dsa/gnome-sort-a-stupid-one/)
+  * [Bogo Sort](https://www.geeksforgeeks.org/dsa/bogosort-permutation-sort/)
+  * [Bitonic Sort](https://www.geeksforgeeks.org/bitonic-sort/)
+    
+---
 
 ## Demo
 
-![Gif](https://github.com/user-attachments/assets/c4cc6463-5598-4406-a770-5402b821a2a2)
+You can try it live -> [link](https://yurgish.github.io/Sort-Algorithms-Visualization/)
+
+Here is little gif of merge sort:
+
+![sortingMergeDemo](https://github.com/user-attachments/assets/9d369844-43ce-4c11-bb15-6071c110b449)
+
+You can also change the colors and apply a gradient to the array — here’s Bitonic Sort in action:
+
+![sortingBitonicDemo](https://github.com/user-attachments/assets/6141c6bf-6220-4eda-875c-93348d9215a5)
